@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cornny</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <meta name="theme-color" content="#FFC300">
+
+  <!-- Favicons -->
+  <link rel="icon" href="{{url_for('static',filename='img/cornny-icon.svg')}}" type="image/svg+xml">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+  <!-- Javascript -->
+  <script src="{{ url_for('static', filename='js/jquery_3.6.0.min.js') }}" ></script>
+
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light"><a href="#hero"><span>Cornny</span></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
+            <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
+            <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
+            <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
+            <li><a class="nav-link scrollto" href="#team">Tim</a></li>
+            <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+            <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+      <h1>Deteksi Penyakit Jagung Dengan Cornny</h1>
+      <h2>Helping the community to keep their corn plants from disease</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="row">
+          
+          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="100">
+              <a href="http://kampusmerdeka.kemdikbud.go.id/" target="_blank">
+              <img src="{{ url_for('static', filename='img/clients/Kampus merdeka.png') }}" alt="gambar Kampus merdeka">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://www.dinus.ac.id/" target="_blank">
+              <img src="https://storage.googleapis.com/tanamin-static-web/tanamin/img/udinus-logo.png" class="img-fluid" alt="gambar udinus">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="300">
+            <a href="https://www.ibi-k57.ac.id/" target="_blank">
+              <img src="{{ url_for('static', filename='img/clients/LOGO-IBIK-.png') }}" class="img-fluid" alt="gambar ibik">
+            </a>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+            <a href="https://orbitfutureacademy.id/id/" target="_blank">
+              <img src="{{ url_for('static', filename='img/clients/Orbit.png') }}" class="img-fluid" alt="gambar orbit future academy">
+            </a>
+          </div>
+
+          <!-- <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="500">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div> -->
+
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <h1>Apa itu Cornny?</h1>
+            <h3>Kami telah melatih algoritma deep learning untuk mengenali 3 jenis penyakit pada tanaman jagung.</h3>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
+            <p>
+              Cornny merupakan artificial intelligence (Kecerdasan Buatan) yang berbasis website yang dapat mendeteksi penyakit pada tanaman jagung dengan gadget anda sehingga dapat digunakan oleh banyak kalangan dengan mudah. Cornny dilatih untuk mengenali penyakit pada tanaman jagung seperti corn northen leaf blight, grey leaf spot, dan common rust.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Akurasi yang tinggi</li>
+              <li><i class="ri-check-double-line"></i> Mudah digunakan</li>
+              <li><i class="ri-check-double-line"></i> Gratis</li>
+            </ul>
+            <p class="fst-italic">
+              Cornny dapat membantu anda untuk mengenali penyakit pada tanaman jagung sehingga anda dapat menentukan penanganan yang tepat pada tanaman jagung anda.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+     <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="574" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Data jagung sehat</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1146" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Data corn northern leaf blight</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1316" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Data grey leaf spot</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1162" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Data common rust</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section> 
+    <!-- End Counts Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="content">
+              <h3>Kenapa memilih cornny?</h3>
+              <p>
+                AI berbasis website untuk deteksi penyakit pada tanaman jagung menggunakan teknologi kecerdasan buatan (AI) dan algoritma deep learning untuk mendiagnosis penyakit pada tanaman jagung melalui gambar yang diunggah ke situs web. Dataset yang digunakan dalam sistem ini terdiri dari ribuan gambar tanaman jagung yang terinfeksi penyakit dan sehat. Saat pengguna mengunggah gambar tanaman jagung, sistem akan menganalisis gambar tersebut dan memberikan diagnosis. Algoritma deep learning digunakan karena dapat mempelajari fitur-fitur kompleks yang terkait dengan penyakit pada tanaman jagung dan menghasilkan diagnosis yang lebih akurat.
+              </p>
+              <div class="text-center">
+                <a href="#services" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-leaf"></i>
+                    <h4>common rust</h4>
+                    <p>Corn common rust adalah penyakit tanaman jagung yang disebabkan oleh jamur bernama Puccinia sorghi. Penyakit ini sangat umum terjadi pada jagung dan dapat menyebabkan kerusakan pada tanaman, yang pada akhirnya dapat menyebabkan penurunan hasil panen.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-leaf"></i>
+                    <h4>grey leaf spot</h4>
+                    <p>Corn grey leaf spot adalah penyakit tanaman jagung yang disebabkan oleh jamur bernama Cercospora zeae-maydis. Penyakit ini dapat menyebabkan kerusakan pada daun jagung dan dapat mengurangi hasil panen pada saat panen.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-leaf"></i>
+                    <h4>Northern leaf blight</h4>
+                    <p>Northern leaf blight adalah penyakit tanaman jagung yang disebabkan oleh jamur bernama Exserohilum turcicum (dahulu disebut sebagai Helminthosporium turcicum). Penyakit ini dapat menyebabkan kerusakan pada daun jagung dan dapat mengurangi hasil panen.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center" data-aos="zoom-in">
+          <h3>Call to Action</h3>
+          <p> Jaga pertanian jagung Anda dengan teknologi canggih. Temukan deteksi penyakit AI yang cepat dan akurat untuk tanaman Anda. Tingkatkan hasil panen dan perlindungan tanaman Anda.</p>
+          <a class="cta-btn" href="#services">Let's Explore</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Cta Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Layanan</h2>
+              <p>Kami menyajikan 3 layanan pada Website ini secara Gratis dan <strong>berkualitas!</strong></p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon"><i class="bx bx-camera"></i></div>
+                    <h4><a>Image Detection</a></h4>
+                  <p>Deteksi penyakit pada daun tanaman jagungmu pada gambar daun tanaman jagung yang kamu unggah.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon"><i class="bx bx-chat"></i></div>
+                    <h4><a href="Chatbot-section.html" target="_blank">Cornny Bot</a></h4>
+                  <p>Cornny bot membantu anda untuk memberikan informasi seputar penyakit pada tanaman jagung dan cara pencegahannya.</p>
+                </div>
+              </div>
+             
+              <center>
+                <div class="col-md-6 d-flex align-items-stretch mt-4">
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M17 4c.763 0 1.394.434 1.856.89c.481.473.922 1.109 1.314 1.81c.787 1.406 1.472 3.243 1.925 5.058c.45 1.801.699 3.682.54 5.161C22.475 18.404 21.71 20 20 20c-1.476 0-2.652-.76-3.614-1.531l-.351-.289l-.492-.415l-.444-.368C14.08 16.572 13.175 16 12 16c-1.175 0-2.08.572-3.099 1.397l-.444.368l-.492.415l-.35.289C6.651 19.24 5.475 20 4 20c-1.711 0-2.476-1.596-2.635-3.081c-.158-1.48.09-3.36.54-5.162c.453-1.814 1.138-3.65 1.925-5.058c.392-.7.833-1.336 1.314-1.81C5.606 4.434 6.237 4 7 4c.515 0 1.018.123 1.513.27l.592.181c.099.03.197.06.295.087c.865.248 1.75.462 2.6.462c.85 0 1.735-.214 2.6-.462l.885-.267C15.983 4.124 16.49 4 17 4Zm0 2c-.383 0-.783.116-1.171.243l-.458.151a7.268 7.268 0 0 1-.221.068c-.885.252-2 .538-3.15.538s-2.265-.286-3.15-.538l-.22-.068l-.459-.151C7.783 6.115 7.383 6 7 6c-.418.078-.793.585-1.076 1.055l-.158.275l-.19.346c-.682 1.218-1.31 2.88-1.73 4.566c-.395 1.577-.587 3.087-.514 4.211l.026.293l.02.176l.03.208c.069.401.218.87.592.87c.812 0 1.49-.404 2.333-1.074l.403-.328l.76-.636l.344-.28C8.904 14.839 10.235 14 12 14c1.765 0 3.096.84 4.16 1.682l.345.28l.76.636l.402.328C18.51 17.596 19.187 18 20 18c.34 0 .494-.387.571-.759l.038-.218l.037-.317c.123-1.146-.067-2.765-.491-4.463c-.386-1.546-.946-3.072-1.562-4.254l-.359-.66l-.158-.273C17.793 6.585 17.418 6.078 17 6ZM8.5 8a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5Zm7 0a1 1 0 0 1 .993.883L16.5 9v.5h.5a1 1 0 0 1 .117 1.993L17 11.5h-.5v.5a1 1 0 0 1-1.993.117L14.5 12v-.5H14a1 1 0 0 1-.117-1.993L14 9.5h.5V9a1 1 0 0 1 1-1Zm-7 2a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1Z"/></g></svg></i></div>
+                      <h4><a>Fun Game </a></h4>
+                    <p>Nikmat permainan seru bersama Cornny Bot dan bantu jagung menemukan Pak Tani!</p>
+                  </div>
+                </div>
+              </center>
+
+              <!-- <div class="col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="icon"><i class="bx bx-world"></i></div>
+                  <h4><a href="">Nemo Enim</a></h4>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                </div>
+              </div>  -->
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Computer Vision Section ======= -->
+    <section id="imagedetection" class="services">
+      <div id="aplikasi" class="container">
+        <div class="row justify-content-start">
+          <div class="col-md-6 left-section">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Cara Penggunaan Sistem Deteksi</h2>
+            </div>
+            <div class="step">
+              <div class="step-icon">
+                <ion-icon name="share-outline"></ion-icon>
+              </div>
+              <div class="step-content">
+                <h4><strong>1. Klik tombol Unggah Gambar</strong></h4>
+                <p>Anda perlu menyiapkan gambar daun tanaman jagung anda. Pastikan format gambar yang diunggah adalah .jpg</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-icon">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </div>
+              <div class="step-content">
+                <h4><strong>2. Menunggu Hasil Keluar</strong></h4>
+                <p>Setelah unggah gambar, sistem kami akan memproses dan hasil dari prediksi akan muncul segera.</p>
+              </div>
+            </div>
+            <form>
+              <div class="image-preview text-left">
+                <label for="input_gambar">Pilih File Gambar</label>
+                <input type="file" id="input_gambar" name="file">
+              </div>
+              <div class="text-center">
+                <button id="prediksi_submit" type="submit" class="upload-button">Unggah Gambar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 right-section text-center">
+            <h2><strong>Hasil Prediksi</strong></h2>
+            <p>Hasil prediksi akan muncul di sini.</p>
+            <div id="hasil_prediksi">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- End Services Section -->
+    <br><br>
+    <div id="fungame" class="services mt-2" >
+      <div class="container">
+
+        <div class="row justify-content-start ">
+
+          <div class="col-md-6 sisi-kiri">
+
+            <div class="section-title" data-aos="fade-right">
+              <h2>Mari Bermain dengan Cornny</h2>
+            </div>
+
+            <!--Kendali Agent (Si Kuning) -->
+            <h4 style="margin-top: -25px;">Kendali Agent (Si Jagung)</h4>
+            <p>Bantu Jagung mencapai Petani dan Hindari Alien Pencuri!</p>
+            <form>
+              <div class="form-group" style="margin-left: 0px;">
+
+                <!-- Tombol Reset -->
+                <button type="submit" id="tombol_reset" class="btn btn-default btn-lg">&#8635; Ulangi Permainan</button>
+                
+                <br>
+
+                <!-- Tombol Robot -->
+                <button type="submit" id="tombol_robot" class="btn btn-default btn-lg mt-3">Mainkan CornnyBot!😎</button>
+              
+                <br>
+                <br>
+                
+                <!-- Tombol Peta -->
+                <h3>Silahkan Pilih Peta</h3>
+                <table id="tombol_pilihan_peta">
+                  <tr>
+                    <td>
+                      <button type="submit" id="tombol_peta1" class="btn btn-default btn-lg">1</button>
+                    </td>
+                    <td>
+                      <button type="submit" id="tombol_peta2" class="btn btn-default btn-lg">2</button>
+                    </td>
+                    <td>
+                      <button type="submit" id="tombol_peta3" class="btn btn-default btn-lg">3</button>
+                    </td>
+                    <td>
+                      <button type="submit" id="tombol_peta4" class="btn btn-default btn-lg">4</button>
+                    </td>
+                    <td>
+                      <button type="submit" id="tombol_peta5" class="btn btn-default btn-lg">5</button>
+                    </td>
+                    <td>
+                      <button type="submit" id="tombol_peta6" class="btn btn-default btn-lg">6</button>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Control -->
+                <br>
+                
+                <table>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <!-- Tombol Atas -->
+                      <button type="submit" id="tombol_gerak_atas" class="btn btn-default btn-lg" 
+                        alt="Atas">&#9650;</button>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <!-- Tombol Kiri -->
+                      <button type="submit" id="tombol_gerak_kiri" class="btn btn-default btn-lg" 
+                        alt="Kiri">&#9664;</button>
+                    </td>
+                    <td>
+                      <!-- Tombol Bawah -->
+                      <button type="submit" id="tombol_gerak_bawah" class="btn btn-default btn-lg" 
+                        alt="Bawah">&#9660;</button>	
+                    </td>
+                    <td>
+                      <!-- Tombol Kanan -->
+                      <button type="submit" id="tombol_gerak_kanan" class="btn btn-default btn-lg" 
+                        alt="Kanan">&#9654;</button>
+                    </td>
+                  </tr>
+                </table>
+
+              </div>
+            </form>
+
+          </div>
+
+
+          <div class="col-md-6 right-section justify-content-start">
+
+            <br>
+            <!-- Bagian Halaman untuk Environment Permainan -->
+            <div id="env_permainan" class="env_permainan">
+              <h2 class="text-center"><strong>Peta akan muncul di sini 👇</strong></h2>
+
+              <!-- Bagian Environment -->
+            </div>
+            
+            <!-- Bagian Status Permainan -->
+            <div id="status_permainan">
+              <!-- Bagian Status -->
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Team</h2>
+              <p>Perkenalkan anggota tim kami yang luar biasa.</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="pic"><img src="{{ url_for('static', filename='img/team/jimmy-profilepic - JEREMYAS WIHARDJONO.png') }}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Jeremyas Cornelis Abigail Wihardjono</h4>
+                    <span>AI Engineer</span>
+                    <p>Mahasiswa S1-Teknik Informatika Universitas Dian Nuswantoro</p>
+                    <div class="social">
+                      <a href="https://www.youtube.com/@jeremyascornelis4375" target="_blank"><i class="ri-youtube-fill"></i></a>
+                      <a href="https://github.com/pockypoem" target="_blank"><i class="ri-github-fill"></i></a>
+                      <a href="https://www.instagram.com/jercor_15/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                      <a href="https://www.linkedin.com/in/jeremyas-cornelis/" target="_blank"> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="pic"><img src="{{ url_for('static', filename='img/team/image (1) - SANDY PRATAMA.png') }}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Sandy Tirta Pratama</h4>
+                    <br>
+                    <span>Make interesting and informative slide decks</span>
+                    <p>Mahasiswa S1-Teknik Informatika Univeristas Dian Nuswantoro</p>
+                    <div class="social">
+                      <a href="https://www.youtube.com/channel/UCT-VDHNffE9-2hkBTZkAEdw" target="_blank"><i class="ri-youtube-fill"></i></a>
+                      <a href="https://github.com/sandypratamaa" target="_blank"><i class="ri-github-fill"></i></a>
+                      <a href="https://instagram.com/sandytirr?igshid=ZGUzMzM3NWJiOQ==" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="pic"><img src="{{ url_for('static', filename='img/team/TLU2 - ANGGA HERMAWAN.png') }}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Angga Apriano Hermawan</h4>
+                    <span>Data Modelling</span>
+                    <p>Mahasiswa S1-Teknik Informatika Universitas Dian Nuswantoro</p>
+                    <div class="social">
+                      <a href="https://www.youtube.com/channel/UCnzecv1Ny3nAt3CJyFZkOAA" target="_blank"><i class="ri-youtube-fill"></i></a>
+                      <a href="https://github.com/anggaapriano" target="_blank"><i class="ri-github-fill"></i></a>
+                      <a href="https://instagram.com/apriano.aa" target="_blank"><i class="ri-instagram-fill"></i></a>
+                      <a href="https://www.linkedin.com/in/angga-apriano-hermawan-175333260/" target="_blank"> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="pic"><img src="{{ url_for('static', filename='img/team/WhatsApp Image 2023-05-08 at 19.25.22 - Aji Bayu.jpg') }}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Aji Bayu Prasetyo</h4>
+                    <span>Make interesting and informative slide decks</span>
+                    <p>Mahasiswa S1-Teknik Informatika Institut Bisnis & Informatika 1957</p>
+                    <div class="social">
+                      <a href="https://github.com/Ajibbb" target="_blank"><i class="ri-github-fill"></i></a>
+                      <a href="https://www.instagram.com/ajiibayuup/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <center>
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="pic"><img src="{{ url_for('static', filename='img/team/25. OKTAVANDI WIDHI PRAKOSO IMG_0465_NEW.JPG') }}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Oktavandi Widhi Prakoso</h4>
+                    <span>Web Developer</span>
+                    <p>Mahasiswa S1-Manajemen Univeristas Dian <br>Nuswantoro</br></p>
+                    <div class="social">
+                      <a href="https://www.youtube.com/@oktavandi6254"><i class="ri-youtube-fill"></i></a>
+                      <a href="https://github.com/oktavandiwidhi"><i class="ri-github-fill"></i></a>
+                      <a href="https://www.instagram.com/okta.vandi_04"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </center>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <!-- <section id="contact" class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="section-title">
+              <h2>Contact</h2>
+              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+            <div class="info mt-4">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mt-4">
+                <div class="info">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="info w-100 mt-4">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+1 5589 55488 55s</p>
+                </div>
+              </div>
+            </div>
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- Chatbot -->
+  <div class="container">
+		<div class="chatbot-body">
+			<div class="msger">
+			<header class="msger-header">
+				<div class="msger-header-title"><i class="ri-wechat-fill" style="margin-top:4px;"></i> &nbsp; CornnyBot! &nbsp;<i class="ri-wechat-fill" style="margin-top:4px;"></i></i></div>
+			</header>
+
+			<main class="msger-chat">
+				<div class="msg left-msg">
+				<div class="msg-img"></div>
+				<div class="msg-bubble">
+					<div class="msg-info">
+            <div class="msg-info-name">CornnyBot</div>
+            <div class="now">Now</div>
+					</div>
+
+					<div class="msg-text">👋 Halo, dengan CornnyBot! disini. Ada yang bisa dibantu?</div>
+				</div>
+				</div>
+			</main>
+
+			<form class="msger-inputarea">
+				<input type="text" class="msger-input" id="textInput" placeholder="Type your message ..." />
+				<button type="submit" class="msger-send-btn">Send</button>
+			</form>
+			</div>
+		</div>
+	</div>
+  
+	<div class="msg-text-btn">
+		<img src="/static/img/Circle-icons-chat.svg.png" alt="chat box icon btn" />
+	</div>
+
+  <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">  
+
+      <!-- <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Visioner 1</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right "></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>   -->
+
+  <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Made by <strong><span>Visioner 1 </span></strong>. 
+        </div>
+        <!-- <div class="credits">  
+          All the links in the footer should remain intact. 
+          You can delete the links only if you purchased the pro version. 
+          Licensing information: https://bootstrapmade.com/license/ 
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/ 
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div> -->
+      </div> 
+      <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div> -->
+    </div> 
+  </footer>  
+<!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script> 
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script  src="{{ url_for('static', filename='js/client-side.js') }}"></script>
+  <!-- <script  src="{{ url_for('static', filename='js/all.js') }}"></script> -->
+
+  <script>
+    const msgerForm = get(".msger-inputarea");
+    const msgerInput = get(".msger-input");
+    const msgerChat = get(".msger-chat");
+
+    // Icons made by Freepik from www.flaticon.com
+    const BOT_IMG = "/static/img/cornnybot.png";
+    const PERSON_IMG = "/static/img/user.png";
+    const BOT_NAME = "CornyBot!";
+    const PERSON_NAME = "You";
+
+    msgerForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const msgText = msgerInput.value;
+      if (!msgText) return;
+
+      appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
+      msgerInput.value = "";
+      botResponse(msgText);
+    });
+
+    function appendMessage(name, img, side, text) {
+      //   Simple solution for small apps
+      const msgHTML = `
+      <div class="msg ${side}-msg">
+        <div class="msg-img" style="background-image: url(${img})"></div>
+
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">${name}</div>
+            <div class="msg-info-time">${formatDate(new Date())}</div>
+          </div>
+
+          <div class="msg-text">${text}</div>
+        </div>
+      </div>
+      `;
+
+      msgerChat.insertAdjacentHTML("beforeend", msgHTML);
+      msgerChat.scrollTop += 500;
+    }
+
+    function botResponse(rawText) {
+      // Bot Response
+      $.get("/get", { msg: rawText }).done(function (data) {
+        console.log(rawText);
+        console.log(data);
+        const msgText = data;
+        appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+      });
+    }
+
+    // Utils
+    function get(selector, root = document) {
+      return root.querySelector(selector);
+    }
+
+    function formatDate(date) {
+      const h = "0" + date.getHours();
+      const m = "0" + date.getMinutes();
+
+      return `${h.slice(-2)}:${m.slice(-2)}`;
+    }
+  </script>
+
+</body>
+
+</html>
